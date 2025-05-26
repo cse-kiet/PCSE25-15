@@ -12,9 +12,9 @@
    Section - A
 
 ## Steps for Execution:
-1. [STEP 1]
-2. [STEP 2]
-   (Add more steps as needed)
+1. Clone the repository in your local machine (git)
+2. run all three docker files to start all the servers and models
+3. Visit on frontend url to test the project
 
 ## Checklist:
 1. Final Project Report
