@@ -1,0 +1,47 @@
+.Navbar {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.Navbar li {
+  margin-right: 20px; /* Adjust the spacing between navbar items as needed */
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: #333333; /* Adjust the text color as needed */
+  font-weight: bold;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust the top position of the navbar dropdown as needed */
+    /* left: 0; */
+    right: 1em;
+    width: 70%;
+    background-color: whitesmoke; /* Adjust the background color of the dropdown as needed */
+    opacity: 99%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+    z-index: 1;
+    border-radius: 10px;
+    padding: 1em 1em 1em 1em;
+  }
+
+  .Navbar.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    padding-right: 1em;
+  }
+}

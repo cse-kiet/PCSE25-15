@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #ebebeb;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #fefefe;
+  padding-top: 90px;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item {
+  flex: 1; /* This ensures both items take equal space */
+  width: 50%; /* Each item takes half of the container's width */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .flex-item {
+    display: flex;
+    width: 100%; /* Each item takes full width on smaller screens */
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #121212;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Apply the same font weight to both labels */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

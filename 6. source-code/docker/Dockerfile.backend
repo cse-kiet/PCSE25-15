@@ -1,0 +1,13 @@
+# Dockerfile.backend
+FROM node:18
+
+WORKDIR /app
+
+COPY backend ./backend
+COPY package*.json ./
+
+RUN npm install -g nodemon && npm install
+
+EXPOSE 5000
+
+CMD ["nodemon", "backend/server.js"]

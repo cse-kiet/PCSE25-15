@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app/backend
+    depends_on:
+      - chatbot
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app/frontend
+    depends_on:
+      - backend
+
+  chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile.chatbot
+    ports:
+      - "8000:8000"
+    volumes:
+      - .mlModels/chatbot:/app/chatbot
