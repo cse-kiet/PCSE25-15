@@ -1,10 +1,13 @@
 # Title of Project: Mental Health and Well-Being surveillance, assessment and tracking solution among students
 
+# Title of Project: Mental Health and Well-Being surveillance, assessment and tracking solution among students
+
 ## Team Members:
 
-1. Ashutosh Verma - 2100290100036
-2. Ananya Verma - 2100290100028
-3. Arpita - 2100290100034
+1. [TEAM_MEMBER_1_NAME]
+2. [TEAM_MEMBER_2_NAME]
+3. [TEAM_MEMBER_3_NAME]
+4. [TEAM_MEMBER_4_NAME]
 
 ## Steps for Execution:
 
