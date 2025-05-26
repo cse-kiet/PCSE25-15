@@ -1,7 +1,5 @@
 # Title of Project: Mental Health and Well-Being surveillance, assessment and tracking solution among students
 
-# Title of Project: Mental Health and Well-Being surveillance, assessment and tracking solution among students
-
 ## Team Members:
 
 1. [TEAM_MEMBER_1_NAME]
