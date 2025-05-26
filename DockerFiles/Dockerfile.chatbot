@@ -1,0 +1,13 @@
+# Dockerfile.chatbot
+FROM python:3.10
+
+WORKDIR /app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY mlModels ./mlModels
+
+EXPOSE 8000
+
+CMD ["python", "mlModles/chatbot/rest.py"]
